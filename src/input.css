@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #020015;
+}
+
+.max-width {
+    max-width: 1150px;
+    padding: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.border-style {
+    border-bottom: 1px solid #62606F;
+}
+
+
+.text-purple {
+    color: #6155E1;
+}
+
+.text-purple:hover {
+    color: #6155E1;
+}
+
+.line {
+    line-height: 67px;
+}
+
+.line2 {
+    border-top: 1px solid #62606F;
+    margin-top: 100px;
+}
+
+.line3 {
+    border-top: 1px solid #62606F;
+    margin-top: 80px;
+}
+
+
+.hire {
+
+    padding-top: 4rem;
+}
+
+
+/* RESPONSIVE SCREEN */
+@media screen and (max-width: 821px) {
+    .img-hide {
+        display: none;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .hire {
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .line {
+        line-height: 38px;
+    }
+}

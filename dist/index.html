@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FLOWBITE -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- SWIPER -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+    <style>
+      /* html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      } */
+
+      .swiper-button-next::after,
+      .swiper-button-prev::after {
+        content: '';
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: white;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* background: #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        /* height: 100%; */
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav data-aos="fade-down" data-aos-duration="1300">
+      <div class="max-width flex flex-wrap items-center justify-between">
+        <h1 class="text-white font-bold text-xl">Sammy</h1>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden text-white"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex items-center flex-col p-4 md:p-0 max-[767px]:bg-[#020015] mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white text-sm font-bold md:p-0"
+                >HOME</a
+              >
+            </li>
+
+            <li class="max-[767px]:py-1">
+              <a
+                href="#"
+                class="block py-2 px-3 text-white text-sm font-bold md:p-0"
+                >ABOUT</a
+              >
+            </li>
+
+            <li class="max-[767px]:py-1">
+              <a
+                href="#"
+                class="block py-2 px-3 text-white text-sm font-bold md:p-0"
+                >SERVICES</a
+              >
+            </li>
+
+            <li class="max-[767px]:py-1">
+              <a
+                href="#"
+                class="block py-2 px-3 text-white text-sm font-bold md:p-0"
+                >PROJECTS</a
+              >
+            </li>
+
+            <li class="max-[767px]:py-1">
+              <a
+                href="#"
+                class="block py-2 px-3 text-white text-sm font-bold md:p-0"
+                >PROJECTS</a
+              >
+            </li>
+
+            <li class="max-[767px]:py-1">
+              <a
+                href=""
+                class="bg-white text-purple text-sm font-extrabold block px-5 rounded-[64px] py-3"
+                >Download Cv</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <main class="max-width">
+      <div
+        class="min-[821px]:mt-16 flex max-[821px]:flex-col gap-36"
+        data-aos="fade-right"
+        data-aos-duration="1300"
+      >
+        <div class="">
+          <h1
+            class="text-white text-[70px] center max-[821px]:text-[50px] max-[500px]:text-[35px] line font-extrabold"
+          >
+            SAMUEL ODILI
+            <span class="text-purple min-[821px]:block max-[821px]:hidden">
+              FRONT-END <br />
+              DEVELOPER</span
+            >
+            <span class="text-purple min-[821px]:hidden max-[821px]:block">
+              FRONT-END DEVELOPER</span
+            >
+          </h1>
+          <img
+            src="assets/line.png"
+            class="w-[371px] max-[500px]:w-[200px] block max-[821px]:mx-auto"
+          />
+
+          <div class="flex hire gap-12 items-center">
+            <a
+              href=""
+              class="bg-white text-purple text-sm font-extrabold block px-5 rounded-[64px] py-3"
+              >HIRE ME NOW</a
+            >
+
+            <p class="text-white text-[15px] px-8 max-[821px]:text-center">
+              Hey there! I'm Samuel Odili, a Frontend Developer who loves <br />
+              to build products that are user-friendly, engaging, and help
+              <br />
+              businesses and people grow.
+            </p>
+          </div>
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="1300" class="img-hide">
+          <img
+            src="assets/samuel-photo.png"
+            class="w-[260px] ax-[821px]:hidden"
+          />
+        </div>
+      </div>
+
+      <div class="line2"></div>
+    </main>
+
+    <!-- ABOUT ME -->
+    <div class="max-width mt-4">
+      <div>
+        <h3 class="text-[#62606F] font-extrabold text-5xl sub-head">
+          ABOUT ME
+        </h3>
+
+        <div class="flex flex-col gap-1">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            class="flex flex-col"
+          >
+            <p class="text-white pt-8 text-xl">
+              My journey into software development began with a curiosity about
+              the intricate workings behind captivating interfaces. As a web
+              designer and copywriter constructing websites for software
+              companies, I found myself drawn to the magic happening beneath the
+              surface. I wanted to understand the alchemy that transforms
+              designs into engaging user experiences, leading me to delve into
+              the realm of software development.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1300"
+            class="flex flex-col"
+          >
+            <p class="text-white pt-8 text-xl">
+              From those initial sparks of curiosity, my path has taken me on an
+              exhilarating journey. I've had the privilege of collaborating with
+              diverse entities, ranging from NGOs to nimble startups and
+              medium-sized corporations. Each encounter has enriched my
+              understanding and honed my skills, guiding me towards my current
+              focus.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1600"
+            class="flex flex-col"
+          >
+            <p class="text-white pt-8 text-xl">
+              Today, my passion lies in crafting innovative, cost-effective
+              products that empower individuals, businesses, and communities. I
+              believe in harnessing the potential of technology and innovation
+              to unlock new possibilities, enabling people to achieve more in
+              every facet of their lives.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="line3"></div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="max-width mt-4">
+      <h3 class="text-[#62606F] font-extrabold text-5xl test">PROJECTS</h3>
+
+      <div
+        class="test-main grid grid-cols-2 justify-center mt-8"
+        style="gap: 100px"
+      >
+        <div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-2.png" alt="" />
+              </div>
+              <!-- <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div> -->
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-2.png" alt="" />
+              </div>
+              <!-- <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div> -->
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-2.png" alt="" />
+              </div>
+              <!-- <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div> -->
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/demo-2.png" alt="" />
+              </div>
+              <!-- <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div> -->
+            </div>
+            <div class="swiper-button-next">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-prev">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLOWBITE -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- SWIPER -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- MAINJS -->
+    <script src="main.js"></script>
+  </body>
+</html>
